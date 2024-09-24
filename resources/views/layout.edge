@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @vite(['resources/css/app.css', 'resources/css/header.css', 'resources/css/main.css', 'resources/css/footer.css'])
+    <script
+      src="https://kit.fontawesome.com/444822b098.js"
+      crossorigin="anonymous"
+    >
+      
+    </script>
+    <title>
+      {{ title || 'Curriculum vitae' }}
+    </title>
+  </head>
+  <body class="bodyVh100">
+
+    @include('partials/header')
+
+    <main>
+      {{{ await $slots.main() }}}
+    </main>
+
+    @include('partials/footer')
+
+  </body>
+</html>
