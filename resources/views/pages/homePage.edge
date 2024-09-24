@@ -1,32 +1,44 @@
 @component('layout', { title : 'Home page'})
-<div class="main-container">
+  <div class="main-container">
     <div id="div-img">
-        <img src="/resources/img/lazquir.jpg" alt="Img of Josué" />
-      </div>
-      <div id="div-cont">
-        <h3>Hello</h3>
-        <h4>A propos de moi</h4>
-        <p class="p-cont">
-          Je suis <b>Josue Ngoma</b>, un développeur web passionné doté d'une
+      <img src="/resources/img/lazquir.jpg" alt="Img of Josué" />
+    </div>
+    <div id="div-cont">
+      <h3>
+        Hello
+      </h3>
+      <h4>
+        A propos de moi
+      </h4>
+      <p class="p-cont">
+        Je suis <b>Josue Ngoma</b>, un développeur web passionné doté d'une
           créativité débordante et d'un talent pour concrétiser des idées en
           expériences numériques interactives.
-        </p>
-        <div id="div-btn">
-          <input type="submit" id="btnCv" class="btn-crcl" value="CV" />
-          <input
-            type="submit"
-            id="btnProject"
-            class="btn-crcl"
-            value="Projets"
-          />
-          <input
-            type="submit"
-            id="btnContacts"
-            class="btn-crcl"
-            value="Contacts"
-          />
-        </div>
+      </p>
+      <div id="div-btn">
+        <input
+          onclick="window.location='{{ route('cv') }}'"
+          type="submit"
+          id="btnCv"
+          class="btn-crcl"
+          value="CV"
+        />
+        <input
+          onclick="window.location='{{ route('homePage') }}'"
+          type="submit"
+          id="btnProject"
+          class="btn-crcl"
+          value="Projets"
+        />
+        <input
+          onclick="window.location='{{ route('contact') }}'"
+          type="submit"
+          id="btnContacts"
+          class="btn-crcl"
+          value="Contacts"
+        />
       </div>
-</div>
-    
+    </div>
+  </div>
+
 @endcomponent

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
-      AdonisJS - A fully featured web framework for Node.js
+      home
     </title>
 
     <link rel="preconnect" href="https://fonts.bunny.net" />
@@ -13,33 +13,17 @@
       rel="stylesheet"
     />
 
-    <style>
-      :root {
-        --sand-1: #fdfdfc;
-        --sand-2: #f9f9f8;
-        --sand-3: #f1f0ef;
-        --sand-4: #e9e8e6;
-        --sand-5: #e2e1de;
-        --sand-6: #dad9d6;
-        --sand-7: #cfceca;
-        --sand-8: #bcbbb5;
-        --sand-9: #8d8d86;
-        --sand-10: #82827c;
-        --sand-11: #63635e;
-        --sand-12: #21201c;
-      }
-    </style>
-
-    @vite(['resources/css/app.css', 'resources/css/main.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/css/main.css'])
   </head>
   <body class="min-h-screen w-screen font-sans">
     <div class="start">
-    <input onclick="window.location='{{route('homePage')}}'"
-            type="button"
-            id="btnProject"
-            class="btn-crcl"
-            value="my portfolio"
-          />
+      <input
+        onclick="window.location='{{ route('homePage') }}'"
+        type="button"
+        id="btnProject"
+        class="btn-crcl"
+        value="my portfolio"
+      />
     </div>
   </body>
 </html>
